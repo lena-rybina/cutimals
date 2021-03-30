@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class AnimalCardsViewModel {
+    let model: CutimalsModel
+    
+    init(model: CutimalsModel) {
+        self.model = model
+    }
+    func fetchRows(completed: @escaping (Result<[CutimalsRows], Error>)->()) {
+        model.fetchAnimalCardsandMapToRows(completed: completed)
+    }
+}
