@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		761566502612220000C95B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615664F2612220000C95B04 /* AppDelegate.swift */; };
 		761566522612220000C95B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566512612220000C95B04 /* SceneDelegate.swift */; };
-		761566542612220000C95B04 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566532612220000C95B04 /* CardsViewController.swift */; };
+		761566542612220000C95B04 /* ListOfCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566532612220000C95B04 /* ListOfCardsViewController.swift */; };
 		761566572612220000C95B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761566552612220000C95B04 /* Main.storyboard */; };
 		761566592612220200C95B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761566582612220200C95B04 /* Assets.xcassets */; };
 		7615665C2612220200C95B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7615665A2612220200C95B04 /* LaunchScreen.storyboard */; };
 		761566662612235C00C95B04 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 761566652612235C00C95B04 /* animals.json */; };
 		7615666B26122F6E00C95B04 /* AnimalCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615666A26122F6E00C95B04 /* AnimalCards.swift */; };
 		76156670261234EF00C95B04 /* AnimalCardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615666F261234EF00C95B04 /* AnimalCardsService.swift */; };
-		7615667A261246FD00C95B04 /* AnimalCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76156679261246FD00C95B04 /* AnimalCardsViewModel.swift */; };
+		7615667A261246FD00C95B04 /* CutimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76156679261246FD00C95B04 /* CutimalsViewModel.swift */; };
 		7615667E2612472800C95B04 /* CutimalsRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615667D2612472800C95B04 /* CutimalsRows.swift */; };
 		761566822612477D00C95B04 /* CutimalsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566812612477D00C95B04 /* CutimalsModel.swift */; };
+		761566852614E13900C95B04 /* CutimalsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566842614E13900C95B04 /* CutimalsCoordinator.swift */; };
+		761566892614E42100C95B04 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761566882614E42100C95B04 /* AnimalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7615664C2612220000C95B04 /* Cutimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cutimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7615664F2612220000C95B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		761566512612220000C95B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		761566532612220000C95B04 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		761566532612220000C95B04 /* ListOfCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCardsViewController.swift; sourceTree = "<group>"; };
 		761566562612220000C95B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		761566582612220200C95B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7615665B2612220200C95B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,9 +35,11 @@
 		761566652612235C00C95B04 /* animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
 		7615666A26122F6E00C95B04 /* AnimalCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCards.swift; sourceTree = "<group>"; };
 		7615666F261234EF00C95B04 /* AnimalCardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardsService.swift; sourceTree = "<group>"; };
-		76156679261246FD00C95B04 /* AnimalCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCardsViewModel.swift; sourceTree = "<group>"; };
+		76156679261246FD00C95B04 /* CutimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutimalsViewModel.swift; sourceTree = "<group>"; };
 		7615667D2612472800C95B04 /* CutimalsRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutimalsRows.swift; sourceTree = "<group>"; };
 		761566812612477D00C95B04 /* CutimalsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutimalsModel.swift; sourceTree = "<group>"; };
+		761566842614E13900C95B04 /* CutimalsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutimalsCoordinator.swift; sourceTree = "<group>"; };
+		761566882614E42100C95B04 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				7615664F2612220000C95B04 /* AppDelegate.swift */,
+				761566842614E13900C95B04 /* CutimalsCoordinator.swift */,
 				7615666E2612316C00C95B04 /* Networking */,
 				761566762612466900C95B04 /* Flows */,
 				761566512612220000C95B04 /* SceneDelegate.swift */,
@@ -120,7 +125,7 @@
 		761566772612468500C95B04 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				76156679261246FD00C95B04 /* AnimalCardsViewModel.swift */,
+				76156679261246FD00C95B04 /* CutimalsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,7 +133,8 @@
 		761566782612469500C95B04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				761566532612220000C95B04 /* CardsViewController.swift */,
+				761566532612220000C95B04 /* ListOfCardsViewController.swift */,
+				761566882614E42100C95B04 /* AnimalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,12 +210,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				761566542612220000C95B04 /* CardsViewController.swift in Sources */,
+				761566542612220000C95B04 /* ListOfCardsViewController.swift in Sources */,
 				761566822612477D00C95B04 /* CutimalsModel.swift in Sources */,
 				76156670261234EF00C95B04 /* AnimalCardsService.swift in Sources */,
 				761566502612220000C95B04 /* AppDelegate.swift in Sources */,
 				761566522612220000C95B04 /* SceneDelegate.swift in Sources */,
-				7615667A261246FD00C95B04 /* AnimalCardsViewModel.swift in Sources */,
+				7615667A261246FD00C95B04 /* CutimalsViewModel.swift in Sources */,
+				761566852614E13900C95B04 /* CutimalsCoordinator.swift in Sources */,
+				761566892614E42100C95B04 /* AnimalCell.swift in Sources */,
 				7615666B26122F6E00C95B04 /* AnimalCards.swift in Sources */,
 				7615667E2612472800C95B04 /* CutimalsRows.swift in Sources */,
 			);

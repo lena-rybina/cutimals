@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import Foundation
 
-class CardsViewController: UIViewController {
+class ListOfCardsViewController: UIViewController {
+    
+    /// Datasource
+    private var rows: [CutimalsRows] = []
+
+    let viewModel: CutimalsViewModel
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
