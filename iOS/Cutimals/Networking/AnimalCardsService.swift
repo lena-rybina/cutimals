@@ -12,7 +12,7 @@ enum AnimalCardsServiceError: Error {
 }
 
 class AnimalCardsService {
-    class func getAnimalCard(completed: @escaping (Result<AnimalCards, Error>)-> ()) {
+    class func getAnimalCard(completed: @escaping (Result<[AnimalCards], Error>)-> ()) {
         
         let bundle = Bundle.main
         /// With resource for given path
@@ -25,12 +25,13 @@ class AnimalCardsService {
         /// Try to decode
         do {
             let decoder = JSONDecoder()
-            let cards = try decoder.decode(AnimalCards.self,
+            let cards = try decoder.decode([AnimalCards].self,
                                              from: data)
         //    print("Title: ", cards.name)
             completed(.success(cards))
             
         } catch let error {
+            print("Error - \(error.localizedDescription)")
             completed(.failure(error))
         }
     }

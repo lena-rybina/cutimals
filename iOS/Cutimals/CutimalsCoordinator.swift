@@ -17,10 +17,10 @@ class CutimalsCoordinator {
     /// Starts coordinator and creates MVVM flow
     func start() {
         let model = CutimalsModel()
-        let viewModel = AnimalCardsViewModel(model: model)
+        let viewModel = CutimalsViewModel(model: model)
         let view = ListOfCardsViewController (viewModel: viewModel)
 
-        /// Injecting coordinator for starting new flows
+        /// Injecting coordinator for starting new flows 
         view.coordinator = self
 
         /// Setting up initial navigation stack
@@ -28,11 +28,11 @@ class CutimalsCoordinator {
     }
 
     /// Starts details flow
-//    func startDetails(for detailsText: String,
-//                      withTitle title: String) {
-//        let detailsVC = DetailsViewController(detailsCopy: detailsText)
-//        detailsVC.title = title
-//        navigationController.pushViewController(detailsVC,
-//                                                animated: true)
-//    }
+    func startDetails(for detailsText: String,
+                      withTitle title: String) {
+        let detailsVC = DetailsViewController(detailsCopy: detailsText)
+        detailsVC.title = title
+        navigationController.pushViewController(detailsVC,
+                                                animated: true)
+    }
 }

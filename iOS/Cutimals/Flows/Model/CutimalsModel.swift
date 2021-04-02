@@ -8,7 +8,6 @@
 import Foundation
 
 class CutimalsModel {
-   
     /// Fetching profile and mapping to rows
     func fetchAnimalCardsandMapToRows(completed: @escaping (Result<[CutimalsRows], Error>)->()) {
         AnimalCardsService.getAnimalCard(completed: { [weak self] result in
@@ -22,13 +21,14 @@ class CutimalsModel {
             }
         })
     }
-        /// Map profile to rows
-    private func processAnimalCardsToRows(_ animalCards: AnimalCards)-> [CutimalsRows] {
-        /// Flat data structure, 1 dimentional array
-        var result: [CutimalsRows] = [.animalImage(animalCards.imageURL),
-                                      .name(animalCards.name),
-                                      .details(animalCards.detailsSmall)]
-        return result
-    }
-        
+    
+    /// Map profile to rows
+    private func processAnimalCardsToRows(_ animalCards: [AnimalCards])-> [CutimalsRows] {
+        animalCards
+            .map { card in
+                return CutimalsRows(animalImage: card.imageURL,
+                                    name: card.name,
+                                    details: card.detailsSmall)
         }
+    }
+}

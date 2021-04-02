@@ -8,7 +8,7 @@
 import Foundation
 
 struct AnimalCards: Codable {
-    let id: UUID
+    let id: String
     let name: String
     private let imageURLString: String
     var imageURL: URL? {

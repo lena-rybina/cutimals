@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum CutimalsRows {
-    case animalImage(URL?)
-    case name(String)
-    case details(String)
+struct CutimalsRows {
+    let animalImage: URL?
+    let name: String
+    let details: String
 }
