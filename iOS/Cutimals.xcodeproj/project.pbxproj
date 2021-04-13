@@ -74,9 +74,9 @@
 			children = (
 				7615669326154AFE00C95B04 /* Utilities */,
 				7615664F2612220000C95B04 /* AppDelegate.swift */,
-				761566842614E13900C95B04 /* CutimalsCoordinator.swift */,
 				7615666E2612316C00C95B04 /* Networking */,
 				761566762612466900C95B04 /* Flows */,
+				761566842614E13900C95B04 /* CutimalsCoordinator.swift */,
 				761566732612368500C95B04 /* Resources */,
 				761566582612220200C95B04 /* Assets.xcassets */,
 				7615665A2612220200C95B04 /* LaunchScreen.storyboard */,

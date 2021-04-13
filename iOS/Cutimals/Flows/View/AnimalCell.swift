@@ -19,7 +19,7 @@ class AnimalCell: UITableViewCell {
     let titleLabel: UILabel = UILabel()
     let subtitleLabel: UILabel = UILabel()
     
-    let paddingConst: CGFloat = 20
+    let paddingConst: CGFloat = 10
     let innerPaddingConst: CGFloat = 5
 
     
@@ -49,13 +49,13 @@ class AnimalCell: UITableViewCell {
 
         NSLayoutConstraint.activate([
             animalImageView.topAnchor.constraint(equalTo: contentView.topAnchor,
-                                                  constant: 20),
+                                                  constant: 15),
             animalImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
-                                                     constant: -20),
+                                                     constant: -15),
             heightAnchor,
    //         animalImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             animalImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,
-                                                      constant: -15)
+                                                      constant: -10)
         ])
         
         NSLayoutConstraint.activate([
