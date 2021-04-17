@@ -126,9 +126,11 @@ extension ListOfCardsViewController: UITableViewDelegate {
        
         let animalDetailsCopy = row.details
         let titleCopy = "\(row.name)"
+        let image = row.animalImage
 
         /// Triggering coordinator action
         coordinator?.startDetails(for: animalDetailsCopy,
-                                  withTitle: titleCopy)
+                                  withTitle: titleCopy,
+                                  withImage: image)
     }
 }

@@ -29,8 +29,10 @@ class CutimalsCoordinator {
 
     /// Starts details flow
     func startDetails(for detailsText: String,
-                      withTitle title: String) {
-        let detailsVC = DetailsViewController(detailsCopy: detailsText)
+                      withTitle title: String,
+                      withImage imageURL: URL?) {
+        let detailsVC = DetailsViewController(detailsCopy: detailsText,
+                                              imageURL: imageURL)
         detailsVC.title = title
         navigationController.pushViewController(detailsVC,
                                                 animated: true)

@@ -9,6 +9,7 @@ import UIKit
 import Foundation
 
 class DetailsViewController: UIViewController {
+    let imageURL: URL?
     let detailsCopy: String
     let detailsTextView = UITextView()
     lazy var animalImageView: UIImageView = {
@@ -17,7 +18,9 @@ class DetailsViewController: UIViewController {
         return imageView
     }()
 
-    init(detailsCopy: String) {
+    init(detailsCopy: String,
+         imageURL: URL?) {
+        self.imageURL = imageURL
         self.detailsCopy = detailsCopy
         super.init(nibName: nil,
                    bundle: nil)
@@ -35,26 +38,28 @@ class DetailsViewController: UIViewController {
     }
     private func layout() {
         view.backgroundColor = .orange
-        view.addSubview(detailsTextView)
         view.addSubview(animalImageView)
+        view.addSubview(detailsTextView)
         
         animalImageView.translatesAutoresizingMaskIntoConstraints = false
       
+        ImageDownloader
+            .downloadImage(from: imageURL) { image in
+                self.animalImageView.image = image
+        }
+        
         detailsTextView.alwaysBounceVertical = true
         detailsTextView.translatesAutoresizingMaskIntoConstraints = false
 
         detailsTextView.font = UIFont.boldSystemFont(ofSize: 18)
-        let heightAnchor: NSLayoutConstraint = animalImageView.heightAnchor.constraint(equalToConstant: 100)
-        heightAnchor.priority = .defaultHigh
-
+        let heightAnchor: NSLayoutConstraint = animalImageView.heightAnchor.constraint(equalToConstant: 150)
 
         NSLayoutConstraint.activate([
-            animalImageView.topAnchor.constraint(equalTo: view.topAnchor,
+            animalImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
                                                   constant: 15),
             heightAnchor,
-            animalImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            animalImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                      constant: -20)
+       //     animalImageView.widthAnchor.constraint(equalToConstant: 100),
+            animalImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
         
         NSLayoutConstraint.activate([
@@ -62,8 +67,8 @@ class DetailsViewController: UIViewController {
                                                      constant: 20),
             detailsTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
                                                       constant: -20),
-            detailsTextView.topAnchor.constraint(equalTo: animalImageView.bottomAnchor),
-            detailsTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            detailsTextView.topAnchor.constraint(equalTo: animalImageView.bottomAnchor, constant: 20),
+            detailsTextView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
 }

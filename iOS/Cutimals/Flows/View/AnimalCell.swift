@@ -44,18 +44,15 @@ class AnimalCell: UITableViewCell {
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(subtitleLabel)
 
-        let heightAnchor: NSLayoutConstraint = animalImageView.heightAnchor.constraint(equalToConstant: 70)
-        heightAnchor.priority = .defaultHigh
-
         NSLayoutConstraint.activate([
             animalImageView.topAnchor.constraint(equalTo: contentView.topAnchor,
-                                                  constant: 15),
+                                                  constant: 10),
             animalImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
-                                                     constant: -15),
-            heightAnchor,
+                                                     constant: -10),
+       //     animalImageView.heightAnchor.constraint(equalToConstant: 70),
+            animalImageView.widthAnchor.constraint(equalToConstant: 80),
    //         animalImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            animalImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor,
-                                                      constant: -10)
+            animalImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10)
         ])
         
         NSLayoutConstraint.activate([
