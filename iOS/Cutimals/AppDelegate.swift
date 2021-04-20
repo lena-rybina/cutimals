@@ -27,11 +27,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-
-//1. Create List of Animals - local data, json
-//2. Pull & decode animal objects into models
-//3. Display list of animals - collection view with custom cells
-
-//4. Display animal details on tap -
-
-

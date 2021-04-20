@@ -43,15 +43,12 @@ class AnimalCell: UITableViewCell {
         contentView.addSubview(titleLabel)
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(subtitleLabel)
+  //      subtitleLabel.numberOfLines = 0
 
         NSLayoutConstraint.activate([
-            animalImageView.topAnchor.constraint(equalTo: contentView.topAnchor,
-                                                  constant: 10),
-            animalImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor,
-                                                     constant: -10),
-       //     animalImageView.heightAnchor.constraint(equalToConstant: 70),
+            animalImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             animalImageView.widthAnchor.constraint(equalToConstant: 80),
-   //         animalImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            animalImageView.heightAnchor.constraint(equalToConstant: 80),
             animalImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10)
         ])
         

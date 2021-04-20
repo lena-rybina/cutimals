@@ -3,7 +3,10 @@
         "id": "test",
         "name": "Shark",
         "image_url": "https://static01.nyt.com/images/2020/08/12/multimedia/00xp-shark/merlin_102239914_6de5d563-4aaa-44d7-bdb0-2a263e515181-superJumbo.jpg",
-        "details_small": "Sharks are cool!"
+        "details_small": "Sharks are cool!",
+        "speed": 80,
+        "lifespan_min": 378432000,
+        "lifespan_max": 378432000
     },
     {
         "id": "test2",
@@ -21,6 +24,6 @@
         "id": "test4",
         "name": "Sharkiee",
         "image_url": "https://static01.nyt.com/images/2020/08/12/multimedia/00xp-shark/merlin_102239914_6de5d563-4aaa-44d7-bdb0-2a263e515181-superJumbo.jpg",
-        "details_small": "Sharks are soooo cool!"
+        "details_small": "Sharks are soooo cool! 9090909909090909090909090909090909"
     }
 ]
