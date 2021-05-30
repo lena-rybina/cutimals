@@ -18,7 +18,7 @@ class CutimalsCoordinator {
     func start() {
         let model = CutimalsModel()
         let viewModel = CutimalsViewModel(model: model)
-        let view = ListOfCardsViewController (viewModel: viewModel)
+        let view = ListOfCardsViewController(viewModel: viewModel)
 
         /// Injecting coordinator for starting new flows 
         view.coordinator = self

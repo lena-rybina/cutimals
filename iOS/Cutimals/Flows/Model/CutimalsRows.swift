@@ -12,3 +12,8 @@ struct CutimalsRows {
     let name: String
     let details: String
 }
+
+enum DetailRow {
+    case image(URL)
+    case titleDetail(String, String)
+}

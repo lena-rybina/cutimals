@@ -15,9 +15,9 @@ struct AnimalCards: Codable {
         URL(string: imageURLString)
     }
     let detailsSmall: String
-    let speed: Int
-    let lifespanMin: Int
-    let lifespanMax: Int
+    let speed: Int?
+    let lifespanMin: Int?
+    let lifespanMax: Int?
 
     enum CodingKeys: String, CodingKey {
         case id
