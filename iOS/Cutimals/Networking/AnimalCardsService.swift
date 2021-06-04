@@ -31,7 +31,7 @@ class AnimalCardsService {
             completed(.success(cards))
             
         } catch let error {
-            print("Error - \(error.localizedDescription)")
+            print("Error - \(error)")
             completed(.failure(error))
         }
     }

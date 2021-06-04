@@ -15,6 +15,7 @@ struct AnimalCards: Codable {
         URL(string: imageURLString)
     }
     let detailsSmall: String
+    let detailsLarge: String?
     let speed: Int?
     let lifespanMin: Int?
     let lifespanMax: Int?
@@ -24,6 +25,7 @@ struct AnimalCards: Codable {
         case name
         case imageURLString = "image_url"
         case detailsSmall = "details_small"
+        case detailsLarge = "details_large"
         case speed
         case lifespanMin = "lifespan_min"
         case lifespanMax = "lifespan_max"
