@@ -2,7 +2,7 @@
     {
         "id": "test",
         "name": "Shark",
-        "image_url": "https://static01.nyt.com/images/2020/08/12/multimedia/00xp-shark/merlin_102239914_6de5d563-4aaa-44d7-bdb0-2a263e515181-superJumbo.jpg",
+        "image_url": "https://wl-brightside.cf.tsp.li/resize/728x/jpg/637/974/b84c0e573e91d52ded84291c09.jpg",
         "details_small": "Sharks are cool!",
         "details_large": "Until the 16th century, sharks were known to mariners as 'sea dogs'. Shark teeth are embedded in the gums rather than directly affixed to the jaw, and are constantly replaced throughout life. Multiple rows of replacement teeth grow in a groove on the inside of the jaw and steadily move forward in comparison to a conveyor belt.",
         "speed": 80,
@@ -12,14 +12,14 @@
     {
         "id": "test2",
         "name": "Sharkieeeeeeeee",
-        "image_url": "https://static01.nyt.com/images/2020/08/12/multimedia/00xp-shark/merlin_102239914_6de5d563-4aaa-44d7-bdb0-2a263e515181-superJumbo.jpg",
+        "image_url": "https://static.boredpanda.com/blog/wp-content/uploads/2014/03/cute-fluffy-animals-coverimage.jpg",
         "details_small": "Sharks are cool!",
         "details_large": "Until the 16th century, sharks were known to mariners as 'sea dogs'. Shark teeth are embedded in the gums rather than directly affixed to the jaw, and are constantly replaced throughout life. Multiple rows of replacement teeth grow in a groove on the inside of the jaw and steadily move forward in comparison to a conveyor belt."
     },
     {
         "id": "test3",
         "name": "Sharkiee",
-        "image_url": "https://static01.nyt.com/images/2020/08/12/multimedia/00xp-shark/merlin_102239914_6de5d563-4aaa-44d7-bdb0-2a263e515181-superJumbo.jpg",
+        "image_url": "https://i.pinimg.com/originals/2a/3b/17/2a3b175c8b6752a62a6f6915ff472f8c.jpg",
         "details_small": "Sharks are soooo cool!",
         "speed": 80,
         "lifespan_min": 378432000,
